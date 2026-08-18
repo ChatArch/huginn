@@ -1,15 +1,15 @@
-<% content_for :title, "Reset password" -%>
+<% content_for :title, I18n.t('huginn.auth.reset_password') -%>
 
 <div class='row'>
   <div class='col-md-6 col-md-offset-3'>
     <div class='well'>
-      <h2>Forgot your password?</h2>
+      <h2><%= I18n.t('huginn.auth.forgot_password') %></h2>
 
       <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post, class: 'form-horizontal' }) do |f| %>
         <%= render "devise/shared/error_messages", resource: resource %>
 
         <div class="form-group">
-          <%= f.label :login, :class => 'col-md-2 col-md-offset-2 control-label' %>
+          <%= f.label :login, I18n.t('huginn.auth.login_or_email'), :class => 'col-md-2 col-md-offset-2 control-label' %>
           <div class="col-md-6">
             <%= f.text_field :login, autofocus: true, :class => 'form-control' %>
           </div>
@@ -17,7 +17,7 @@
 
         <div class="form-group">
           <div class="col-md-offset-4 col-md-10">
-            <%= f.submit "Send me reset password instructions", class: "btn btn-primary" %>
+            <%= f.submit I18n.t('huginn.auth.send_reset_password_instructions'), class: "btn btn-primary" %>
           </div>
         </div>
       <% end %>

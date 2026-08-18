@@ -1,13 +1,13 @@
-<% content_for :title, "Agents" -%>
+<% content_for :title, I18n.t('huginn.agents.title') -%>
 
 <div class='container'>
   <div class='row'>
     <div class='col-md-12'>
       <div class="page-header">
-        <h2><%= session[:original_admin_user_id].present? ? "#{current_user.username}’s Agents" : 'Your Agents' %></h2>
+        <h2><%= session[:original_admin_user_id].present? ? I18n.t('huginn.agents.someone_agents', username: current_user.username) : I18n.t('huginn.agents.your_agents') %></h2>
         <% if @service %>
           <p class="text-muted">
-            Filtered by service:
+            <%= I18n.t('huginn.agents.filtered_by_service') %>
             <%= service_label(@service) %>
           </p>
         <% end %>
@@ -18,9 +18,9 @@
       <br/>
 
       <div class="btn-group">
-        <%= link_to icon_tag('glyphicon-plus') + ' New Agent', new_agent_path, class: "btn btn-default" %>
-        <%= link_to icon_tag('glyphicon-refresh') + ' Run event propagation', propagate_agents_path, method: 'post', class: "btn btn-default" %>
-        <%= link_to icon_tag('glyphicon-random') + ' View diagram', diagram_path, class: "btn btn-default" %>
+        <%= link_to icon_tag('glyphicon-plus') + ' ' + I18n.t('huginn.agents.new_agent'), new_agent_path, class: "btn btn-default" %>
+        <%= link_to icon_tag('glyphicon-refresh') + ' ' + I18n.t('huginn.agents.run_event_propagation'), propagate_agents_path, method: 'post', class: "btn btn-default" %>
+        <%= link_to icon_tag('glyphicon-random') + ' ' + I18n.t('huginn.agents.view_diagram'), diagram_path, class: "btn btn-default" %>
         <%= link_to icon_tag('glyphicon-adjust') + toggle_disabled_text, toggle_visibility_agents_path, method: :put, class: "btn btn-default visibility-enabler" %>
       </div>
     </div>
