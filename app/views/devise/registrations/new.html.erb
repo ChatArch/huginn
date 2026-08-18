@@ -1,11 +1,11 @@
-<% content_for :title, "Sign up" -%>
+<% content_for :title, I18n.t('huginn.auth.sign_up') -%>
 
 <div class='container'>
   <div class='row'>
     <div class='col-md-8 col-md-offset-2'>
       <div class='well'>
 
-        <h2>Sign up</h2>
+        <h2><%= I18n.t('huginn.auth.sign_up') %></h2>
 
         <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: 'form-horizontal' }) do |f| %>
           <%= render "devise/shared/error_messages", resource: resource %>
@@ -37,10 +37,10 @@ bin/setup_heroku
 
           <% if User.using_invitation_code? %>
             <div class="form-group">
-              <%= f.label :invitation_code, class: 'col-md-4 control-label' %>
+              <%= f.label :invitation_code, I18n.t('huginn.auth.invitation_code'), class: 'col-md-4 control-label' %>
               <div class="col-md-6">
                 <%= f.text_field :invitation_code, class: 'form-control' %>
-                <span class="help-inline">We are not yet open to the public.  If you have an invitation code, please enter it here.</span>
+                <span class="help-inline"><%= I18n.t('huginn.auth.invitation_code_help') %></span>
               </div>
             </div>
           <% end %>
@@ -49,7 +49,7 @@ bin/setup_heroku
 
           <div class="form-group">
             <div class="col-md-offset-4 col-md-10">
-              <%= f.submit "Sign up", class: "btn btn-primary" %>
+              <%= f.submit I18n.t('huginn.auth.sign_up'), class: "btn btn-primary" %>
             </div>
           </div>
 

@@ -1,0 +1,107 @@
+zh-CN:
+  datetime:
+    distance_in_words:
+      half_a_minute: "半分钟"
+      less_than_x_seconds:
+        one: "不到 1 秒"
+        other: "不到 %{count} 秒"
+      x_seconds:
+        one: "1 秒"
+        other: "%{count} 秒"
+      less_than_x_minutes:
+        one: "不到 1 分钟"
+        other: "不到 %{count} 分钟"
+      x_minutes:
+        one: "1 分钟"
+        other: "%{count} 分钟"
+      about_x_hours:
+        one: "约 1 小时"
+        other: "约 %{count} 小时"
+      x_days:
+        one: "1 天"
+        other: "%{count} 天"
+      about_x_months:
+        one: "约 1 个月"
+        other: "约 %{count} 个月"
+      x_months:
+        one: "1 个月"
+        other: "%{count} 个月"
+      about_x_years:
+        one: "约 1 年"
+        other: "约 %{count} 年"
+      over_x_years:
+        one: "超过 1 年"
+        other: "超过 %{count} 年"
+      almost_x_years:
+        one: "将近 1 年"
+        other: "将近 %{count} 年"
+  huginn:
+    auth:
+      log_in: "登录"
+      login: "登录"
+      sign_up: "注册"
+      logout: "退出登录"
+      login_or_email: "用户名或邮箱"
+      password: "密码"
+      remember_me: "记住我"
+      forgot_password: "忘记密码？"
+      reset_password: "重置密码"
+      send_reset_password_instructions: "发送重置密码说明"
+      resend_unlock_code: "重新发送解锁码"
+      resend_unlock_instructions: "重新发送解锁说明"
+      missing_confirmation_instructions: "没有收到确认说明？"
+      missing_unlock_instructions: "没有收到解锁说明？"
+      invitation_code: "邀请码"
+      invitation_code_help: "当前还未向公众开放。如果你有邀请码，请在这里输入。"
+    navigation:
+      agents: "代理"
+      scenarios: "场景"
+      events: "事件"
+      credentials: "凭据"
+      services: "服务"
+      account: "账号"
+      search: "搜索"
+      new_agent: "新建代理"
+      run_event_propagation: "运行事件传播"
+      view_diagram: "查看图表"
+      switch_back_to_admin_user: "切回管理员账号"
+      job_management: "任务管理"
+      user_management: "用户管理"
+      about: "关于"
+      events_count: "个事件"
+    actions:
+      show: "查看"
+      edit: "编辑"
+      share: "分享"
+      delete: "删除"
+      back: "返回"
+      re_emit: "重新发出"
+      yes: "是"
+      no: "否"
+      are_you_sure: "确定吗？"
+    agents:
+      title: "代理"
+      your_agents: "你的代理"
+      someone_agents: "%{username} 的代理"
+      filtered_by_service: "按服务过滤："
+      new_agent: "新建代理"
+      run_event_propagation: "运行事件传播"
+      view_diagram: "查看图表"
+    scenarios:
+      title: "场景"
+      your_scenarios: "你的场景"
+      description: "场景是一组命名的代理。场景可以帮助你组织代理，也可以导入/导出一组代理用于分享。"
+      agents: "代理"
+      new_scenario: "新建场景"
+      import_scenario: "导入场景"
+    events:
+      title: "事件"
+      agent_events_title: "%{agent_name} 的事件"
+      your_events: "你的事件"
+      from_agent: "来自 %{agent_name}"
+      source: "来源"
+      created: "创建时间"
+      payload: "载荷"
+      ago: "前"
+      re_emit_confirm: "确定要复制这个事件并立即发出新事件吗？"
+      see_all_events: "查看全部事件"

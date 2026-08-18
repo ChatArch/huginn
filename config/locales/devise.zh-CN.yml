@@ -1,0 +1,68 @@
+zh-CN:
+  devise:
+    confirmations:
+      confirmed: "你的邮箱地址已确认。"
+      send_instructions: "几分钟内你会收到确认邮箱地址的说明邮件。"
+      send_paranoid_instructions: "如果你的邮箱存在于系统中，几分钟内你会收到确认邮箱地址的说明邮件。"
+    failure:
+      already_authenticated: "你已经登录。"
+      deactivated_account: "你的账号已被管理员停用。"
+      inactive: "你的账号尚未激活。"
+      invalid: "%{authentication_keys} 或密码无效。"
+      locked: "你的账号已锁定。"
+      last_attempt: "你还有最后一次尝试机会，之后账号将被锁定。"
+      not_found_in_database: "%{authentication_keys} 或密码无效。"
+      timeout: "会话已过期，请重新登录。"
+      unauthenticated: "你需要先登录或注册。"
+      unconfirmed: "你需要先确认邮箱地址。"
+    mailer:
+      confirmation_instructions:
+        subject: "确认说明"
+      reset_password_instructions:
+        subject: "重置密码说明"
+      unlock_instructions:
+        subject: "解锁说明"
+    omniauth_callbacks:
+      failure: "无法通过 %{kind} 认证：%{reason}。"
+      success: "已通过 %{kind} 账号认证。"
+    omniauth_providers:
+      twitter: "Twitter"
+      tumblr: "Tumblr"
+      github: "GitHub"
+      dropbox: "Dropbox"
+      evernote: "Evernote"
+      google: "Google"
+      threads: "Threads"
+      raindrop: "Raindrop"
+    passwords:
+      no_token: "你只能通过密码重置邮件中的完整链接访问此页面。"
+      send_instructions: "几分钟内你会收到重置密码的说明邮件。"
+      send_paranoid_instructions: "如果你的账号存在，几分钟内你会收到密码恢复链接。"
+      updated: "你的密码已修改，当前已登录。"
+      updated_not_active: "你的密码已修改。"
+    registrations:
+      destroyed: "账号已注销。"
+      signed_up: "欢迎！注册成功。"
+      signed_up_but_inactive: "注册成功，但账号尚未激活，暂时无法登录。"
+      signed_up_but_locked: "注册成功，但账号已锁定，暂时无法登录。"
+      signed_up_but_unconfirmed: "确认链接已发送到你的邮箱，请按邮件说明激活账号。"
+      update_needs_confirmation: "账号已更新，但需要验证新的邮箱地址。请查看邮件并点击确认链接。"
+      updated: "账号已更新。"
+    sessions:
+      signed_in: "登录成功。"
+      signed_out: "已退出登录。"
+      already_signed_out: "已退出登录。"
+    unlocks:
+      send_instructions: "几分钟内你会收到账号解锁说明邮件。"
+      send_paranoid_instructions: "如果你的账号存在，几分钟内你会收到解锁说明邮件。"
+      unlocked: "账号已解锁，请登录。"
+  errors:
+    messages:
+      already_confirmed: "已经确认，请尝试登录"
+      confirmation_period_expired: "需要在 %{period} 内确认，请重新申请"
+      expired: "已过期，请重新申请"
+      not_found: "未找到"
+      not_locked: "未锁定"
+      not_saved:
+        one: "有 1 个错误导致 %{resource} 无法保存："
+        other: "有 %{count} 个错误导致 %{resource} 无法保存："

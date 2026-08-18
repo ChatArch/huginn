@@ -56,8 +56,9 @@ module Huginn
     config.time_zone = ENV['TIMEZONE'].presence || 'Pacific Time (US & Canada)'
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
-    # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    # config.i18n.default_locale = :de
+    # ChatArch fork: allow deploying a localized UI without changing upstream data.
+    config.i18n.available_locales = [:en, :'zh-CN']
+    config.i18n.default_locale = (ENV['HUGINN_DEFAULT_LOCALE'].presence || 'en').to_sym
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = 'utf-8'
